@@ -12,13 +12,21 @@ A template for creating and deploying React applications to GitHub Pages with Ta
 
 
 ## Quick Start
-Run the one-click deploy script:
+1. First-time setup:
+   ```
+   npm run init-and-deploy
+   ```
+   You'll be prompted to enter a repository name, or you can provide one directly:
+   ```
+   npm run init-and-deploy -- --repo-name="my-awesome-app"
+   ```
+
+2. For subsequent updates, simply run:
    ```
    npm run auto-deploy
    ```
-   No prompts or questions - the script automatically creates a repository and deploys your app.
 
-Your app will be available at the URL provided in the console output
+Your app will be available at the URL provided in the console output.
 
 ## Development
 
@@ -43,7 +51,7 @@ Your app will be available at the URL provided in the console output
 
 ## Troubleshooting
 
-If the auto-deploy fails:
+If the initialization fails:
 
 - Make sure GitHub CLI is installed: `gh --version`
 - Make sure you're logged in to GitHub: `gh auth status`
