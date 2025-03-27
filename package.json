@@ -26,7 +26,6 @@
         "predeploy": "npm run build",
         "deploy": "gh-pages -d build",
         "create-gh-repo": "",
-        "setup-and-deploy": "node ./scripts/setup-deploy.js",
         "auto-deploy": "node ./scripts/auto-deploy.js"
     },
     "eslintConfig": {
