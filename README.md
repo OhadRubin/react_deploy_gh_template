@@ -1,6 +1,6 @@
 # React GitHub Pages Template
 
-A simple template for quickly creating and deploying React applications to GitHub Pages with Tailwind CSS.
+A template for creating and deploying React applications to GitHub Pages with Tailwind CSS using one-click deployment.
 
 ## Features
 
@@ -8,30 +8,17 @@ A simple template for quickly creating and deploying React applications to GitHu
 - 🎨 Tailwind CSS for styling
 - 📱 Responsive design
 - 🚀 GitHub Pages deployment
-- 🤖 Automated setup script
+- 🤖 One-click automated deployment
 
-## Prerequisites
-
-Before you begin, ensure you have the following installed:
-
-- [Node.js](https://nodejs.org/) (with npm)
-- [GitHub CLI](https://cli.github.com/) (`gh`)
-- GitHub CLI logged in (`gh auth login`)
 
 ## Quick Start
+Run the one-click deploy script:
+   ```
+   npm run auto-deploy
+   ```
+   No prompts or questions - the script automatically creates a repository and deploys your app.
 
-1. Clone this repository
-2. Install dependencies:
-   ```
-   npm install
-   ```
-3. Run the automated setup and deploy script:
-   ```
-   npm run setup-and-deploy
-   ```
-   Follow the prompts to create a GitHub repository and deploy your app.
-
-4. Your app will be available at `https://your-username.github.io/your-repo-name`
+Your app will be available at the URL provided in the console output
 
 ## Development
 
@@ -53,6 +40,14 @@ Before you begin, ensure you have the following installed:
 - Modify the components in the `src` directory
 - Customize Tailwind CSS in `tailwind.config.js`
 - Update the page title and metadata in `public/index.html`
+
+## Troubleshooting
+
+If the auto-deploy fails:
+
+- Make sure GitHub CLI is installed: `gh --version`
+- Make sure you're logged in to GitHub: `gh auth status`
+- Check error messages in the console output
 
 ## License
 
