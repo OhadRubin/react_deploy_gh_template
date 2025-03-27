@@ -69,10 +69,11 @@ async function autoSetupAndDeploy() {
                 process.exit(1);
             }
 
-            // Make sure gh-pages is installed
+            // Make sure required dependencies are installed
             console.log('\n📦 Ensuring required dependencies are installed...');
             try {
                 execSync('npm list gh-pages || npm install gh-pages --save-dev', { stdio: 'inherit' });
+                execSync('npm install @tailwindcss/postcss --save-dev', { stdio: 'inherit' });
                 console.log('✓ Dependencies checked');
             } catch (error) {
                 // Continue anyway, we'll use npx as a fallback
